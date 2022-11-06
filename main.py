@@ -37,7 +37,7 @@ with mp_face_detection.FaceDetection(
     if results.detections:
       for detection in results.detections:
         mp_drawing.draw_detection(image, detection)
-    cv2.imshow('MediaPipe Face Detection', cv2.flip(image, 1))
+    cv2.imshow('Face Detection', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == 27:
       break
 cap.release()
